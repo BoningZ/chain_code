@@ -1,0 +1,14 @@
+#
+# Copyrighe IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+---
+# A Shotgun policy xx
+identities: # list roles to be used in the policy
+    user1: {"role": {"name": "member", "mspId": "Org1MSP"}} #role member in org with mspid Org1MSP
+    user2: {"role": {"name": "member", "mspId": "Org2MSP"}}
+policy:
+    2-of:
+       - signed-by: "user1"
+       - signed-by: "user2"
