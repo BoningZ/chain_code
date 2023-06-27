@@ -7,9 +7,9 @@ import (
 )
 
 type basicInfo struct {
-	identity string `json:"identity"`
-	name     string `json :"name"`
-	mobile   string `json:"mobile"`
+	Identity string `json:"identity"`
+	Name     string `json :"name"`
+	Mobile   string `json:"mobile"`
 }
 
 func (t *basicInfo) Init(stub shim.ChaincodeStubInterface) pb.Response {
